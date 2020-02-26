@@ -1,0 +1,28 @@
+@media screen and (max-width: 414px) {
+  .MicrosoftImagineAcademy h1 {
+    font-size: 50px !important;
+	text-align: center;
+  }
+  
+  .Microsoftimagineacademy {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+    .Microsoftimagineacademy p {
+	  width: 90%;
+	  margin: 0;
+	}
+	
+	.Microsoftimagineacademy h2 {
+      text-align: center;
+	  font-size: 30px;
+  }
+  
+  .MicrosoftImagineAcademy {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+}

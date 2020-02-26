@@ -1,0 +1,33 @@
+@media screen and (max-width: 414px) {
+  .leftnav {
+    display: flex;
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	width: 100% !important;
+	background-color: red;
+	position: relative;
+	overflow: visible;
+  }
+  
+  .Marketing, .Microsoftimagine, .Digitaldesign, .Personalfinance {
+    width: 100%;
+	position: static !important;
+  }
+  
+  .videoholder {
+    overflow: visible !important;
+	height: 10% !important;
+	z-index: 10 !important;
+	position: relative !important;
+  }
+  
+    .videoholder video {
+	height: 10% !important;
+	position: relative !important;
+	z-index: 10 !important;
+  }
+  
+  .overallbody {
+    display: flex !important;
+  }
+}

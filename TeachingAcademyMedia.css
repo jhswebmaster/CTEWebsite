@@ -1,0 +1,26 @@
+  @media screen and (max-width: 414px) {
+    .TeachingAcademy h1 {
+	  font-size: 50px !important;
+	  text-align: center;
+	}
+	
+	.TeachingAcademy {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
+	
+	.TeachingAcademyInfo {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.TeachingAcademyInfo p {
+	  width: 90%;
+	}
+  
+   .TeachingAcademyInfo h2 {
+     text-align: center;
+   }
+  }

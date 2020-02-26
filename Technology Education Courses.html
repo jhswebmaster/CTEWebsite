@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Technology Education Courses</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="TechnologyEducationMedia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+.navbar li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+.navbar li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+.overallbody {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+ 
+ .leftnav {
+  background-color: purple;
+  width: 25%;
+  height: 100%;
+ }
+ 
+ .leftnav {
+  width: 25%;
+  height: 16.666%;
+  display
+ }
+ 
+  .leftnav a {
+  font-family: Patua One;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.Photography {
+  background-color: #0d0d0d;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Photography:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0px -2px 15px white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.Architect {
+  background-color: #000033;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Architect:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Biotechnology {
+  background-color: #0059b3;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Biotechnology:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.ComputerScience {
+  background-color: #999966;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.ComputerScience:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+
+.ScienceEngineering {
+  background-color: #c68c53;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.ScienceEngineering:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.FineArtsCourses {
+  background-color: #99994d;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.FineArtsCourses:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+.slideShowContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+} 
+ 
+ .slideShowContainer img{
+   background-repeat: no-repeat;  
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+  z-index: -99;
+  overflow: hidden;
+ }
+ 
+ .Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+ </style>
+<script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $(".slideShowContainer img:gt(0)").hide();
+  setInterval(function(){
+    var current = $(".slideShowContainer img:visible");
+	var next = current.next().length ? current.next() : $(".slideShowContainer img:eq(0)");
+	current.fadeOut(1000); 
+	next.fadeIn(1000);
+  },3000);
+  });
+
+</script>
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul class="navbar">      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li>  
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a  class="active" href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<div>
+
+</div>
+<div class="overallbody">
+  <div class="slideShowContainer">
+	  <img src="MaterialScience.png"/>
+	  <img src="ComputerScience.png"/>
+	  <img src="Laserprinter.png"/>
+	  <img src="ScienceRoom.png"/>
+	  <img src="ScienceRoomTables.png"/>
+  </div>
+  <div class="leftnav">
+	  <a class="Photography" href="Photography.html"><p>Photography</p></a>
+	  <a class="Architect" href="ArchitecturalCourses.html"><p></p>Architectural Courses</a>
+	  <a class="Biotechnology" href="Biotechnology.html"><p>Biotechnology</p></a>
+	  <a class="ComputerScience" href="ComputerScience.html"><p>Computer Science</p></a>
+	  <a class="ScienceEngineering" href="ScienceEngineering.html"><p>Science and Engineering</p></a>
+	  <a class="FineArtsCourses" href="FineArts.html"><p>Fine Arts Courses</p></a>
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

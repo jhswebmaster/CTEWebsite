@@ -1,0 +1,26 @@
+@media screen and (max-width: 414px) {
+  .Digitaldesignbackground h1 {
+    text-align: center;
+  }
+  
+  .Digitaldesignbackground {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .DigitalDesign {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+   .DigitalDesign p {
+      width: 90%;
+	  margin: 0; 
+   }
+   
+   .DigitalDesign h2 {
+     text-align: center;
+   }
+}

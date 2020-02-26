@@ -1,0 +1,19 @@
+@media screen and (max-width: 414px) {
+  .English, .History, .Math, .Science {
+    width: 100% !important;
+	height: auto !important;
+  }
+
+  .background {
+    height: auto !important;
+  }
+  
+  header {
+    position: fixed !important;
+  }
+  
+  .English {
+    margin-top: 80px !important;
+  }
+
+}

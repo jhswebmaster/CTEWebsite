@@ -1,0 +1,31 @@
+@media screen and (max-width: 414px) {
+  .Marketingcoursesbackground h1 {
+    font-size: 50px !important;
+	text-align: center;
+  }
+  
+  .Marketingcoursesbackground  {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .Marketing1, .Marketing2 {
+    width: 100% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  .Marketing1 p, .Marketing2 p {
+    width: 90%;
+	  margin: 0 !important;
+  }
+  
+  .Marketing1 h2, .Marketing2 h2 {
+    margin-bottom: 3%;
+  }
+
+
+
+}

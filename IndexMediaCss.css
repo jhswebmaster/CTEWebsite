@@ -1,0 +1,144 @@
+@media screen and (max-width: 414px) {
+  .Overview, .Rankings, .SchoolData {
+	margin: 0;
+	width: 100%;
+	margin-bottom: 5%;
+  }
+  
+  .landing {
+  background-image: url("Walkout.jpg");
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-attachment: scroll !important;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  
+  .OverviewInfo {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .Overview p, .Rankings p {
+    line-height: 1.5em;
+  }
+  
+  .Overview img, .Rankings img, .SchoolData img {
+    width: 95%;
+  }
+  
+  .Stats {
+  display: flex;
+	flex-direction: column;
+	height: auto;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  }
+  
+  .StatHolder {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  
+  .Grades, .Enrollment, .StudentTeacherRatio {
+    margin: 0;
+  }
+   
+   .Grades p, .Enrollment p, .StudentTeacherRatio p {
+	  font-size: 20px;
+  }
+  
+  .landing {
+    height: 100vh;
+	object-fit: cover;
+  }
+  
+  .landing  h1 {
+    font-size: 45px;
+  }
+  
+  .SlideShowContainer {
+    width: 95%;
+  }
+  
+  
+  .TeachersAndStudentsBox {
+    display: flex;
+	flex-direction: column;
+	padding-bottom: 5%;
+  }
+  
+  .TeachersBox, .StudentsBox {
+	height: auto;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 3%;
+  }
+  
+  .TeachersBox p, .StudentsBox p {
+    line-height: 1.5em;
+  }
+  
+  .teachers h2 {
+    text-align: center;
+	padding: 30px;
+	margin: 0;
+  }
+  
+  .Intro h2 {
+    text-align: center;
+  }
+  
+  .Teachers {
+	width: 100%;
+  }
+  
+  .FineArtsTeachers, .CareerTechTeachers {
+	width: 90%;
+  }
+  
+   .FineArtsTeachers p, .CareerTechTeachers p {
+     line-height: 1.5em;
+   }
+  
+  .buttons, .buttons2 {
+	width: 90%;
+	margin-top: 2%;
+  }
+  
+  .FineArtsHeading, .CareerTechHeading {
+  width: 90%;
+}
+  
+  .StudentActivitiesInfo {
+    text-align: center;
+  }
+  
+  .SlideShowContainer {
+    height: auto;
+  }
+  
+  .Text {
+    position: relative;
+  }
+  
+  .next, .prev {
+    top: 20%;
+	padding: 5px;
+	color: white;
+  }
+  
+  
+}

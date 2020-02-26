@@ -1,0 +1,149 @@
+@media screen and (max-width: 414px) {
+  .Typewriter2 {
+	position: absolute;
+	display: flex !important;
+	text-align: center;
+  }
+  
+  .Typewriter2 h1 {
+    font-family: Verdana, Geneva, sans-serif;
+	font-size: 60px;
+	font-weight: normal;
+	text-transform: uppercase;
+  }
+  
+  .Typewriter h1 {
+    display: none;
+  }
+ 
+  .TSAHeader {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	height: auto !important;
+  }
+  
+  .TSAList {
+    display: flex;
+	flex-direction: column;
+	height: auto !important;
+  }
+  
+  .TSAList li {
+    height: auto !important;
+  }
+
+  .TSAList li a {
+    padding: 5px;
+  }
+  
+  .Overview {
+    display: flex;
+	flex-direction: column;
+	height: auto !important;
+  }
+  
+  .MottoBox, .CreedBox {
+    width: 90% !important;
+	height: auto !important;
+  }
+  
+  .MottoBox img {
+    height: auto !important;
+  }
+  
+  .MottoBox p {
+    padding-bottom: 5%;
+	text-align: center;
+  }
+  
+  .CreedBox {
+    padding-bottom: 5%;
+  }
+  
+  .HistoryTitle h1 {
+    text-align: center;
+  }
+  
+  .AboutTSA {
+    width: 90%;
+	margin: 0 !important;
+  }
+  
+  .History {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .AboutTSA img {
+    width: 100% !important;
+	margin: 0 !important;
+	margin-bottom: 5% !important;
+  }
+  
+  .HistoryofTSA {
+    width: 90%;
+  }
+  
+  .CompetitionInfo, .CompetitionInfo2, .CompetitionInfo3 {
+    display: flex;
+	flex-direction: column;
+	width: 100% !important;
+	margin: 0 !important;
+	align-items: center;
+  }
+  
+  .ActualInfo,   .ActualInfo2,   .ActualInfo3 {
+    width: 90% !important;
+  }
+  
+  .ImageHolder {
+    width: 90% !important;
+	height: auto !important;
+  }
+  
+  .ActualInfo p, .ActualInfo2 p, .ActualInfo3 p {
+     margin-bottom: 5%;
+  }
+  
+  .Awards {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .AwardsInfo {
+    width: 90% !important;
+	margin: 0 !important;
+  }
+  
+  .Gallery h1 {
+    text-align: center;
+  }
+  
+  .SlideShowContainer {
+    width: 95% !important;
+	height: auto !important;
+  }
+  
+  
+  .Text {
+    position: relative !important;
+  }
+  
+  .prev, .next {
+    padding: 5px !important;
+	color: white !important;
+	top: 30% !important;
+  }
+  
+  .footer {
+    display: none;
+  }
+  
+  .LandingTSA {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+}

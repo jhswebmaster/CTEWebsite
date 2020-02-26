@@ -1,0 +1,24 @@
+@media screen and (max-width: 414px) {
+  .BiotechnologyCourses h1 {
+    font-size: 45px !important;
+	text-align: center;
+  }
+  
+  .BiotechnologyCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .BiotechnologyInfo {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .BiotechnologyInfo p {
+    width: 90%;
+  }
+  
+}

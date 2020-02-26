@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CTE Program</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+li a:hover {
+  color: red;
+  -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+.active {
+  color: red;
+}
+
+
+
+
+
+
+
+.overallbody {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .leftnav {
+  background-color: purple;
+  width: 25%;
+  height: 100%;
+ }
+ 
+ .videoholder {
+ background-color: blue;
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+    z-index: -5;
+    background-size: cover;
+    overflow: hidden;
+ }
+ 
+ .leftnav {
+  width: 25%;
+  height: 25%;
+  display
+ }
+ 
+  .leftnav a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.Marketing {
+  background-color: #0d0d0d;
+}
+
+.Marketing:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0px -2px 15px white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.Microsoftimagine {
+  background-color: #000033;
+}
+
+.Microsoftimagine:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Digitaldesign {
+  background-color: #0059b3;
+}
+
+.Digitaldesign:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Personalfinance {
+  background-color: #999966;
+}
+
+.Personalfinance:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+ 
+ #Businessandmarketing {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+ }
+ </style>
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="Homepage.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a class="active" href="CTE Program.html">CTE Program</a></li>  
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+</header>
+<div>
+
+</div>
+<div class="overallbody">
+  <div class="leftnav">
+	  <a class="Marketing" href="Marketing Courses.html"><p>Marketing</p></a>
+	  <a class="Microsoftimagine" href="#"><p>Microsoft Imagine Academy</p></a>
+	  <a class="Digitaldesign" href="#"><p>Digital Design</p></a>
+	  <a class="Personalfinance" href="#"><p>Personal Finance</p></a>
+  </div>
+  <div class="videoholder">
+  <video autoplay muted loop id="Businessandmarketing">
+  <source src="Businessandmarketingvideoactual.mp4" type="video/mp4">
+</video>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Foods</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="FoodsMedia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<style>
+  @font-face {
+    font-family: Cornerstone;
+    src: url("Cornerstone.ttf");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 60%;
+}
+
+.footer {
+   height: 70px;
+   width: 100%;
+   background-color: #595959;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 100%;
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+#mybtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  box-shadow: -4px 4px 0 rgba(255,0,0,0.5);
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0);
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+#mybtn:hover {
+  box-shadow: -4px 4px 0 rgba(255,0,0,1);
+ }
+
+.FoodCourses {
+  background-image: url("Foods.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.FoodCourses h1 {
+  color: white;
+  font-family: Cornerstone;
+  font-size: 70px;
+  text-shadow:
+		-0.5px -0.5px 0 #000,
+		0.5px -0.5px 0 #000,
+		-0.5px 0.5px 0 #000,
+		0.5px 0.5px 0 #000;
+}
+
+p {
+  font-family: Montserrat;
+  margin: 5px 20% 5px;
+  line-height: 1.7em;
+}
+
+h2 {
+  font-family: Patua One;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20% 30px;
+}
+
+.FoodsInfo, .FoodsGourmetInfo, .FoodsInternational, .FoodsScience {
+  font-family: Montserrat; 
+  margin: 5px 0% 5px;
+  line-height: 1.7em;
+}
+
+.special {
+  margin-bottom: 40px;
+}
+
+.Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
+</style>
+
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li> 
+	  <li><a href="Family and Consumer Sciences.html">Family and Consumer Sciences</a></li>
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a class="active" href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://neolectra.github.io/index.html">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<div>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("mybtn").style.display = "block";
+	  } else {
+		document.getElementById("mybtn").style.display = "none";
+	  }
+	}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+	</script>
+</div>
+<div class="FoodCourses">
+  <h1>Foods Courses</h1>
+</div>
+<section class="FoodsInfo">
+  <h2>Foods 1</h2>
+  <p>1 Semester/0.5 Credit</p>
+  <p>Grades 9  10  11  12</p>
+  <p>Course Fees: $30 lab fee or WA state food workers card $10 optional fee</p>
+  <p>Taught by: Jordan Wendy/Emily Evans</p><br>
+  <p> Course Description: This is an introductory course designed for students who want to learn how to work with recipes, meal plann, and prepare food. Students will make things such as 
+	quick breads/yeast breads, 
+	lasagna, shish kabobs, fruit smoothies, desserts, eggs/omelets, 
+	appetizers, pizza, pies, among many others food products. They will have an 
+	opportunity to explore a variety of cooking techniques, learn how food preparation
+	affects their health, as well as how to balance time management 
+	in order to meet time restraints. Students will explore basic culinary skills and 
+	techniques including, but not limited to, measuring, unit pricing, organizational planning. The skills students will learn can lead 
+	to employment in food service at a restaurant or other similar settings. Instruction will take students 
+	through basic kitchen equipment, food preparation terminology, 
+	kitchen safety and sanitation, along with the proper preparation of 
+	foods from all food groups. By the end of this course, students should be able to 
+	pass the Washington State (King County) Food Worker’s Card Assessment. This course may be applied 
+	toward the Family and Consumer Sciences Certificate.  </p><br><br>
+</section>
+<section class="FoodsGourmetInfo">
+  <h2>Foods Gourmet</h2>
+  <p>1 Semester/0.5 Credit</p>
+  <p>Grades  9  10  11  12</p>
+  <p>Course Fees: $30 lab fee</p>
+  <p>Taught by: Jordan Wendy/Emily Evans</p><br>
+  <p> Course Description: In this course students will challenge and gain a better understanding of what gourmet food is.  
+	Students will learn to prepare a variety of dishes from salted caramel potato chip cookies and sushi, 
+	to cr&egrave;me brul&eacute;e, chicken cordon bleu bites,
+	handmade ravioli, as well as a variety of seasonal/holiday dishes. This class will emphasize thinking 
+	creatively regarding food, product quality, presentation, and the role of ingredients. Teachers will also utilize up to date cooking techniques and 
+	industry standards for high-end foods. </p><br><br>
+</section>
+<section class="FoodsInternational">
+  <h2>Foods International</h2>
+  <p>1 Semester/0.5 Credit</p>
+  <p>Grades  9  10  11  12</p>
+  <p>Course Fees: $30 lab fee</p>
+  <p>Taught by: Jordan Wendy/Emily Evans</p><br>
+  <p> Course Description: In this course, students will learn about the traditions of different countries, and practice 
+    preparing a variety of international dishes. Countries that will be studied include
+	Italy, France, Greece, Germany, Scandinavia, Mexico, 
+	Japan, China, as well as many other countries. Menu items will include manicotti, enchiladas, 
+	chocolate mousse, baklava, egg rolls, hand-made pasta, and many 
+	other dishes. This course may be applied toward the Family and Con
+	sumer Sciences Certificate.  </p><br><br>
+</section>
+<section class="FoodsScience">
+  <h2>Food Science 1</h2>
+  <p>1 Semester/0.5 Credit</p>
+  <p>CADR, CTE Dual Credit (3 college credits)</p>
+  <p>Grades  9  10  11  12</p>
+  <p>Course Fees: $30 lab fee</p>
+  <p>Taught by: Jordan Wendy/Emily Evans</p><br>
+  <p class="special"> Course Description: This course focuses on food production and the biological, 
+    chemical, and physical properties related in these processes. Topics of discussion 
+    include how raw products are converted into their processed forms for safe consumption, and how they are stored. 
+	Food additives, food preparation, packaging, and food storage are also talked about as well. Assignments and projects
+	will be given regarding how food can be better selected, preserved, and processed. By the end 
+	of this course students will be able to analyze factors that contribute 
+	to human health in correlation to food preparation and 
+	production. They will also understand and apply chemical concepts in food 
+	preparation in order to make foods not only tasty, but also nutritious, safe, and convenient. This class is cross credited with a lab science and 
+	can be used as a lab science class for graduation purposes. </p>
+</section>
+
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CTE Program</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="CambridgeProgramMedia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /*background-color: rgb(200,54,54,0.5);*/
+  background-color: rgba(200, 54, 54, 0.7);
+  position: static;
+  
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 60%;
+}
+
+.footer {
+   height: 70px;
+   width: 100%;
+   background-color: #595959;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 100%;
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+#mybtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  box-shadow: -4px 4px 0 rgba(255,0,0,0.5);
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0);
+}
+
+#mybtn:hover {
+  box-shadow: -4px 4px 0 rgba(255,0,0,1);
+ }
+
+
+ .background {
+  background-image: url("CambridgeBackground.png");
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ } 
+ 
+.background div {
+  height: 45vh;
+  width:40vw;
+  margin: 20px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+} 
+
+.English, .History, .Math, .Science {
+  font-family: Patua One;
+  color: white;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.English p, .History p, .Math p, .Science p {
+  margin: 15px 20px;
+  font-family: Montserrat;
+}
+
+.English {
+   background-color: rgba(196,19,42,0.5);
+}
+
+.English:hover {
+   background-color: rgba(196,19,42,0.8);
+   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.Math {
+   background-color: rgba(45,189,23,0.5);
+}
+
+.Math:hover {
+   background-color: rgba(45,189,23,0.8);
+   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.History {
+   background-color: rgba(71,22,208,0.5);
+}
+
+.History:hover {
+   background-color: rgba(71,22,208,0.8);
+     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.Science {
+   background-color: rgba(198,210,19,0.5);
+}
+
+.Science:hover {
+   background-color: rgba(198,210,19,0.8);
+     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
+</style>
+
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li>  
+	  <li><a class="active" href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="#">Cambridge Program</a>
+	 </div>
+	<a href="http://neolectra.github.io/index.html">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<div>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("mybtn").style.display = "block";
+	  } else {
+		document.getElementById("mybtn").style.display = "none";
+	  }
+	}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+	</script>
+</div>
+<div class="background">
+  <div class="English">
+   <h1>English</h1>
+   <p> This core subject must be taken all four years of high school, and focuses on different topics each year. 
+       It is designed to teach students how to communicate clearly, accurately and effectively in both speech 
+		and writing, as well as to read, interpret and 
+		evaluate texts through the study 
+		of literature in English. They are given texts in a range of forms, such as prose, poetry, and drama to analyze.</p> 
+  </div>
+  <div class="History">
+   <h1>History</h1>
+   <p> The Cambridge IGCSE History syllabus investigates some of the major international issues of the nineteenth and 
+	twentieth centuries, analyzing the history of particular region
+	s in more depth. The emphasis is on both historical 
+	knowledge and on the skills required for historical research. Students focus on major historical concepts such as cause and effect, 
+	continuity and change, similarity and difference, as well as how to use historical evidence.</p> 
+  </div>
+  <div class="Math">
+  <h1>Math</h1>
+   <p> An essential subject for all learners, Cambridge IGCSE Mathemat
+	ics is a fully examined 
+	course which encourages 
+	the development of mathematical knowledge as a key life skill, 
+	and as a basis for more advanced study. Learners will be challenged with difficult problem solving questions, and will develop a better feel for numbers, patterns, 
+	and relationships. </p> 
+  </div>
+  <div class="Science">
+    <h1>Science</h1>
+   <p> The Cambridge curriculum for science includes IGCSE Biology for first years, Physics for second years, AP Chemistry the next year, and A Level Biology for seniors. 
+       Students learn about a range of topics, and develop an understanding of scientific skills which may be applied in daily life. 
+	   An emphasis is placed on how scientific research may cause positive or negative effects on individuals, communities, and the environment. </p> 
+  </div> 
+</div>
+
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+</html>

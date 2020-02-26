@@ -1,0 +1,27 @@
+  @media screen and (max-width: 414px) {
+    .PsychologyCourses h1 {
+	  font-size: 50px !important;
+	  text-align: center;
+	}
+	
+	.PsychologyCourses {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
+	
+	.PsychologyInfo, .APPsychologyInfo { 
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;	
+	}
+	
+	.PsychologyInfo p, .APPsychologyInfo p { 
+	  width: 90%;
+	}
+	
+	.APPsychologyInfo h2 {
+	  text-align: center;
+	}
+	
+  }

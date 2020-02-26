@@ -1,0 +1,26 @@
+@media screen and (max-width: 414px) { 
+  .FoodCourses h1 {
+    text-align: center;
+  }
+  
+  .FoodCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .FoodsInfo, .FoodsGourmetInfo, .FoodsInternational, .FoodsScience {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+   .FoodsInfo p, .FoodsGourmetInfo p, .FoodsInternational p, .FoodsScience p {
+     width: 90%;
+   }
+  
+   .FoodsInfo h2, .FoodsGourmetInfo h2, .FoodsInternational h2, .FoodsScience h2 {
+      text-align: center;
+  
+  }
+}

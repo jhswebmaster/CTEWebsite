@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Science and Engineering</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="ScienceEngineeringMedia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<style>
+  @font-face {
+    font-family: Cornerstone;
+    src: url("Cornerstone.ttf");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 60%;
+}
+
+.footer {
+   height: 70px;
+   width: 100%;
+   background-color: #595959;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 100%;
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+#mybtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  box-shadow: -4px 4px 0 rgba(255,0,0,0.5);
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0);
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+#mybtn:hover {
+  box-shadow: -4px 4px 0 rgba(255,0,0,1);
+ }
+
+.ScienceEngineeringCourses {
+  background-image: url("Scienceengineering.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.ScienceEngineeringCourses h1 {
+  color: white;
+  font-family: Cornerstone;
+  font-size: 70px;
+  text-shadow:
+		-0.5px -0.5px 0 #000,
+		0.5px -0.5px 0 #000,
+		-0.5px 0.5px 0 #000,
+		0.5px 0.5px 0 #000;
+}
+
+p {
+  font-family: Montserrat;
+  margin: 5px 20% 5px;
+  line-height: 1.7em;
+}
+
+h2 {
+  font-family: Patua One;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20% 30px;
+}
+
+.MaterialsScienceTech1, .MaterialsScienceTech2, .MechanicalEngineering1, .MechanicalEngineering2, .ComputerScienceElectricalEngineering {
+  font-family: Montserrat; 
+  margin: 5px 0% 5px;
+  line-height: 1.7em;
+}
+
+
+.Hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
+</style>
+
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li> 
+	  <li><a href="Technology Education Courses.html">Technology Education Courses</a></li>
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a class="active" href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://neolectra.github.io/index.html">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<div>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("mybtn").style.display = "block";
+	  } else {
+		document.getElementById("mybtn").style.display = "none";
+	  }
+	}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+	</script>
+</div>
+<div class="ScienceEngineeringCourses">
+  <h1>Science and Engineering Courses</h1>
+</div>
+<section class="MaterialsScienceTech1">
+  <h2>Materials Science Technology 1</h2>
+  <p>2 Semesters/1.0 Credit</p>
+  <p>Grades 9  10  11  12</p>
+  <p>CADR, CTE Dual Credit</p>
+  <p>Taught by: Greg Shelton</p><br>
+  <p> Course Description: Over the course of this class, students will apply new skills and knowl-
+	edge to working with various materials such as metals, ceramics, 
+	polymers (plastics), and composites. This course also offers college 
+	credits (CTE Dual Credit) from Edmonds Community College so long 
+	as the student maintains a grade of B or higher. Students will gain an 
+	understanding of materials through careful observations, creating, 
+	questioning, and building. This engineering course involves welding, casting metals into molds, working glass, cutting polymers, and 
+	much more. All in all this class is great for students who love hands 
+	on classes and lab science. In the Pacific Northwest, college and 
+	university level study in Materials Science Technology is offered in degree programs at UW, EDCC, WSU, U of Oregon, and U of Idaho. This 
+	course also offers college credits as long as the student maintains a 
+	grade of B or higher. </p><br><br>
+</section>
+<section class="MaterialsScienceTech2">
+  <h2>Materials Science Technology 2</h2>
+  <p>2 Semester/1.0 Credit</p>
+  <p>Grades  11  12</p>
+  <p>CTE Dual Credit (5 College Credits)</p>
+  <p>Course Fees: $56</p>
+  <p>Taught by: Greg Shelton</p><br>
+  <p> Course Description: This course is a continuation of MST I. Students will have more independence in lab selection and design within the current unit of study. 
+    Learning will occur through questioning, observing, creating, and building. 
+	Students will explore concepts related to the crystal structure of metals, 
+	the effect of non neutral flames on metal, controlling the thermal expansion of glasses, glass fusing and will work with various polymers and 
+	composites. This course is designed for students interested in deepening knowledge of materials and their applications. Students will be 
+	expected to schedule time before or after school for additional work.  </p><br><br>
+</section>
+<section class="MechanicalEngineering1">
+  <h2>Mechanical Engineering 1</h2>
+  <p>2 Semester/1.0 Credit</p>
+  <p>Grades  9  10  11  12</p>
+  <p>CTE Dual Credit</p>
+  <p>Course Fees: $10</p>
+  <p>Taught by: Greg Shelton</p><br>
+  <p> Course Description: This basic engineering and CAD class is for future engineers, designers and students who like designing and drawing. It is a problem-solving class in which individuals and small groups will use techniques 
+	such as brainstorming, model-building, and mock-ups to design 
+	solutions to problems and then present those ideas. Approximately 
+	50% of the time will be spent using CAD systems such as AutoCAD, 
+	Rhinoceros, sketchup, and other software that will introduce students 
+	to the world of graphical engineering. CAD/CAM, laser cutters, and 3d 
+	printers will be used to take drawings and ideas and transfer them to 
+	3-D parts, models, and objects. Students will create a portfolio that 
+	will contain their work, organized and presented according to professional standards. Most assigned work can be completed in class, but 
+	students can expect up to ½ hour of homework per week in order to 
+	assemble their portfolio. </p><br><br>
+</section>
+<section class="MechanicalEngineering2">
+  <h2>Mechanical Engineering 2/3</h2>
+  <p>2 Semesters/1.0 Credit</p>
+  <p>Grades  11  12</p>
+  <p>CTE Dual Credit</p>
+  <p>Prerequisite: Mechanical Engineering 1</p>
+  <p>Course Fees: $10</p>
+  <p>Taught by: Greg Shelton</p><br>
+  <p> Course Description: This course is designed as a follow-up course to Introduction to 
+	Mechanical Engineering. AutoCAD,  3d rendering software, Rhino, 
+	and Master CAM software packages are used in the course. Students 
+	will design, create, and present their projects to their peers. Students 
+	will create a portfolio that will contain their work, organized and 
+	presented according to professional standards. Most assigned work 
+	can be completed in class, but students can expect up to ½ hour of 
+	homework per week in order to assemble their portfolio. </p><br><br>
+</section>	
+<section class="ComputerScienceElectricalEngineering">
+  <h2>Computer Science and Electrical Engineering</h2>
+  <p>2 Semesters/1.0 Credit</p>
+  <p>Grades  11  12</p>
+  <p>Prerequisite: Algebra 1</p>
+  <p>Course Fees: $50</p>
+  <p>Taught by: Greg Shelton</p><br>
+  <p> Course Description: This course will provide students with hand on practical knowledge 
+	of electronic devices work,. Students learn to design and build devices that detect their surroundings, move, make noise, play music, 
+	communicate and respond to remote control. In the process, these 
+	students become programmers with the c language. Among the technologies learned are basic laws of electronics including ohm’s law, 
+	analog and digital data input and output, pulse-width modulation. 
+	Among the skills learned are programming microcomputers in the c 
+	language, parts identification, reading electronic schematics, circuit 
+	breadboarding, circuit board fabrication, drilling parts insertion, and 
+	soldering.  Among the major projects in the first semester are musical 
+	instrument that changes pitch and volume as the hands are moved 
+	toward and away from the sensors, a robot that detects and avoids 
+	obstacles, a rolling robot that is controlled by an infrared remote. The 
+	second semester major projects are a working laser tag system, a 
+	student chosen and designed project. Past projects have included a 
+	pinball machine, a helicopter, a walking robot dog that can balance 
+	on two wheels and a air guitar that actually plays.   </p><br><br>
+</section>
+
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+</html>

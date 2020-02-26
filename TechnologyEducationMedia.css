@@ -1,0 +1,36 @@
+  @media screen and (max-width: 414px) { 
+ .leftnav {
+    display: flex;
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	width: 100% !important;
+	background-color: red;
+	position: static !important;
+	overflow: visible;
+  }
+  
+  .overallbody {
+    display: flex !important;
+	flex-direction: column;
+	overflow: visible !important;
+  }
+  
+    .Architect, .Photography, .Biotechnology, .ComputerScience, .ScienceEngineering, .FineArtsCourses {
+    width: 100%;
+	height: 100%;
+	position: relative !important;
+  }
+  
+  .slideShowContainer {
+    position: static !important;
+	height: 100%;
+  }
+  
+  .slideShowContainer img {
+    overflow: visible !important;
+	height: 100% !important;
+	object-fit: cover;
+  }
+  
+}
+  

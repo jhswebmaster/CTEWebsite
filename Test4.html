@@ -1,0 +1,40 @@
+ <div class="slideShowContainer">
+    <ul class="slideShow">
+	  <li><img src="MaterialScience.png"/></li>
+	  <li><img src="ComputerScience.png"/></li>
+	  <li><img src="Laserprinter.png"/></li>
+	  <li><img src="ScienceRoom.png"/></li>
+	  <li><img src="ScienceRoomTables.png"/></li>
+	</ul>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+  $(function(){
+    var slides = $(".slideShow>li");
+	var slideCount = 0;
+	var totalSlides = slides.length;
+	var slideCache = [];
+	
+	(function preloader(){
+	  if(slideCount < totalSlides){
+	    slideCache[slideCount] = new Image();
+		slideCache[slideCount].src = slides.eq(slideCount).find("img").attr("src");
+		slideCache[slideCount].onload = function(){
+		  slideCount++;
+		  preloader();
+		 }
+	}else {
+	  slideCount = 0;
+	  SlideShow();
+	 }
+	}());
+	
+	function SlideShow()[
+	  slides.eq(slideShow).fadeIn(1000).delay(2000).fadeOut(1000, function(){
+	    slideCount < totalSlides - 1 ? slideCount ++ : slideCount = 0;
+		SlideShow();
+	   });
+	  }
+	 });
+	</script>

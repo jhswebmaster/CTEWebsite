@@ -1,0 +1,30 @@
+@media screen and (max-width: 414px) {
+  .FineArtsCourses h1 {
+    font-size: 50px;
+	text-align: center;
+  }
+  
+  .FineArtsCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .Yearbook, .TheaterLightingSound, .ProductionWorkshop {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .Yearbook p, .TheaterLightingSound p, .ProductionWorkshop p {
+    width: 90%;
+	margin: 0;
+  }
+
+   .Yearbook h2, .TheaterLightingSound h2, .ProductionWorkshop h2 {
+     text-align: center;
+  
+  }
+  
+}

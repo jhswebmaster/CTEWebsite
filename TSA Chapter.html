@@ -1,0 +1,896 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>TSA Chapter</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="TSAChapterMediaCss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<style>
+  @font-face {
+    font-family: Cornerstone;
+    src: url("Cornerstone.ttf");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: rgba(185,11, 11, 0.8);
+  position: fixed;
+  z-index: 25;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+.footer {
+   height: 70px;
+   width: 100%;
+   background-color: #595959;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 100%;
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+#mybtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  box-shadow: -4px 4px 0 rgba(255,0,0,0.5);
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0);
+}
+
+#mybtn:hover {
+  box-shadow: -4px 4px 0 rgba(255,0,0,1);
+ }
+
+ .TSAHeader {
+   top: 70px;
+   max-width: 100%;
+   width: 100vw;
+   height: 50px;
+   position: fixed;
+   background-color: rgba(200, 54, 54, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 20;
+ }
+ 
+.TSAList li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+} 
+
+.TypewriterHolder {
+  width: 840px;
+}
+
+.Typewriter h1 {
+  color: white;
+  overflow: hidden;
+  border-right: .10em solid orange;
+  white-space: nowrap;
+  font-family: Cornerstone;
+  font-weight: normal;
+  text-transform:uppercase;
+  font-size: 70px;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(25,end),
+	blink-caret .6s step-end infinite;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: white;}
+}
+
+.GreyFilm {
+  height: 100vh;
+  background-color: rgba(54,54,48,0.5);
+  width: 100%;
+  position: absolute;
+  top:0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LandingTSA {
+  background-image: url("Ignore this.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Overview {
+  background-color: white;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OverviewTitle {
+  font-weight: normal;
+  color: #626262;
+  font-family: Patua One;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.MottoBox, .CreedBox {
+  background-color: #f0f0f0;
+  height: 400px;
+  width: 30%;
+  margin: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, sans-serif;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.CreedBox {
+  background-color: #f0f0f0;
+  height: auto;
+  width: 30%;
+  margin: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, sans-serif;
+  box-shadow: 2px 2px 5px grey;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+}
+
+.MottoBox img {
+  height: 220px;
+  width: 70%;
+  margin: 15px;
+}
+
+.MottoBox h2, .CreedBox h2 {
+  font-family: Patua One;
+  font-weight: normal;
+  margin: 15px;
+ }
+ 
+ .CreedBox p {
+  margin: 0 15px;
+  font-family: Montserrat;
+  font-size: 15px;
+ }
+ 
+ .MottoBox p {
+  font-family: Montserrat;
+   font-size: 20px;
+   margin-bottom: 5px;
+ }
+ 
+.History {
+  background-color: #f0f0f0;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.Competition {
+  background-color: white;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.HistoryTitle, .CompetitionTitle, .ActivitiesTitle, .AwardsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Patua One;
+}
+
+.HistoryTitle h1, .CompetitionTitle h1, .ActivitiesTitle h1, .AwardsTitle h1 {
+  font-family: Patua One;
+  font-size: 40px;
+  font-weight: normal;
+  color: #626262;
+  margin: 60px;
+}
+
+.CompetitionInfo, .CompetitionInfo2, .CompetitionInfo3 {
+  margin: 0 20%;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+
+.ImageHolder {
+  width: 50%;
+ }
+ 
+ .ImageHolder img {
+  width: 100%;
+  height: 300px;
+ }
+ 
+.ActualInfo, .ActualInfo2, .ActualInfo3 {
+  width: 48%;
+  font-family: Patua One;
+ }
+ 
+.ActualInfo h2, .ActualInfo2 h2, .ActualInfo3 h2 {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.ActualInfo p, .ActualInfo2 p, .ActualInfo3 p {
+  font-family: Montserrat;
+  line-height: 30px;
+}
+
+
+.Activities {
+  background-color: #f0f0f0;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.AwardsInfo {
+  margin: 0 20%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.AwardsActualInfo h2{
+  font-family: Patua One;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.AwardsActualInfo p {
+  font-family: Montserrat;
+  margin-bottom: 60px;
+  line-height: 30px;
+}
+
+
+.SlideShowContainer {
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 900px;
+  height: 700px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+
+.MySlides img{
+  width: 100%;
+  height: 100%;
+ }
+ 
+.MySlides {
+  display: none;
+ }
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  height: 50px;
+  width: 20px;
+  user-select: none;
+}
+
+.next {
+  top:50%;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  padding: 15px;
+  bottom: 8px;
+  text-align: center;
+  background-color: white;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 18px;
+  box-shadow: 0px -3px 5px grey;
+}
+
+.NumberText {
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+.Gallery {
+  margin: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.Gallery h1 {
+  font-family: Patua One;
+  font-weight: normal;
+  color: #626262;
+  font-size: 40px;
+}
+
+.AboutTSA, .HistoryofTSA {
+  margin: 0 20%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.AboutTSA h2, .HistoryofTSA h2 {
+  font-family: Patua One;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.AboutTSA p, .HistoryofTSA p {
+  font-family: Montserrat;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.AboutTSA img {
+  width: 80%;
+  margin: 15px 10%;
+  margin-bottom: 30px;
+}
+
+.HistoryofTSA p {
+  padding-bottom: 60px;
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
+
+.Typewriter2 {
+  display: none;
+}
+
+
+.Hamburger {
+  display: none;
+}
+</style>
+
+
+
+<script>
+var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("MySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" Active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " Active";
+}
+</script>
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+      <li><a href="index.html">Home</a></li>
+	  <li><a class="active" href="TSA Chapter.html">TSA Chapter</a></li>
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="https://neolectra.github.io/">Design Brief</a></li>  
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a class="active" href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+
+<div class="TSAHeader">
+    <ul class="TSAList">      
+      <li><a href="#Overview">Overview</a></li>
+	  <li><a href="#History">Chapter and History</a></li>
+	  <li><a href="#Competition">Competitions</a></li>
+	  <li><a href="#Activities">Activities</a></li> 
+	  <li><a href="#Awards">Awards</a></li> 
+    </ul>
+  </div>
+<div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$("a[href='#Overview']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Overview").offset().top
+    }, 1000);
+});
+
+$("a[href='#History']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#History").offset().top
+    }, 1000);
+});
+
+$("a[href='#Competition']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Competition").offset().top
+    }, 1000);
+});
+
+$("a[href='#Activities']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Activities").offset().top
+    }, 1000);
+});
+
+$("a[href='#Awards']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Awards").offset().top
+    }, 1000);
+});
+</script>
+
+
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("mybtn").style.display = "block";
+	  } else {
+		document.getElementById("mybtn").style.display = "none";
+	  }
+	}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+	</script>
+</div>
+
+
+<div class="LandingTSA">
+</div>
+<div class="GreyFilm">
+<div class="TypewriterHolder">
+<div class="Typewriter">
+  <h1>Our TSA Chapter</h1>
+</div>
+</div>
+<div class="Typewriter2">
+  <h1>Our TSA Chapter</h1>
+</div>
+</div>
+
+<h1 id="Overview" class="OverviewTitle"> Overview</h1>
+<section class="Overview">
+  <div class="MottoBox">
+    <img src="TSASymbol.gif"/>
+    <h2>Motto</h2>
+	<p>"Learning to Lead in a Technical World"</p>
+  </div>
+  <div class="CreedBox">
+    <h2>Creed</h2>
+	<p>I believe that Technology Education holds an important place in my life in the technical world. <p><br>
+		<p>I believe there is a need for the development of good attitudes concerning work, tools, materials, experimentation, and processes of industry. </p><br>
+		<p>Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live. </p><br>
+		<p>I will accept the responsibilities that are mine. I will accept the theories that are supported by proper evidence.</p><br><p> I will explore on my own for safer, more effective methods of working and living. </p><br>
+		<p>I will strive to develop a cooperative attitude and will exercise tact and respect for other individuals. Through the work of my hands and mind, I will express my ideas to the best of my ability.</p><br> 
+		<p>I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans. </p>
+  </div>
+</section>
+<section id="History" class="History">
+  <div class="HistoryTitle">
+    <h1>Chapter and History</h1>
+  </div>
+  <div class="AboutTSA">
+    <h2>About TSA</h2>
+	<p>The Technology Student Association (TSA) is a national organization of students that are involved in science, technology, engineering, and mathematics (i.e. STEM). 
+	   Students who have completed or are enrolled in technology education courses have the opportunity to join the club, and currently, TSA's membership has more than 250,000
+	   middle and high school students across the United States. TSA has a wide range of activities to choose from depending on the member's interest, making it an 
+	   extremely open and positive experience for everyone. Members learn not only from the competitive events, but also through TSA's leadership opportunities, 
+	   and much more. </p>
+	<p>Members of TSA have the chance to compete at exciting state conferences, and later, at the annual National TSA Conference. The judging is done by technology 
+	  and engineering educators and industry representatives, inspiring the best from participants. Students are awarded with not only medals and trophies, but also 
+	  the fond memories of friendship and teamwork as well as the exhilarating challenge of participating in a National TSA Conference. </p>
+	<p>The competitions that JHS has participated in include 3D Animation, Digital Video Production, Dragster Design, Engineering Design, Architectural Design, 
+	   Software Development, Biotechnology Design, Cybersecurity, Essays on Technology, Extemporaneous Speech, Technology Bowl, Coding, VEX Robotics, Music Production, Video Game Design, 
+	   Webmaster, On Demand Video, and Debating Technological Issues. </p>
+	 <img src="TSAHappy.jpg"/>
+  </div>
+  <div class="HistoryofTSA">
+    <h2>History of Our TSA Chapter</h2>
+	<p>Juanita High School's TSA Chapter began in 2013, by a group of students who took the initiative to start it. Since then, the club has transformed into a larger group of recurring students with around a dozen new freshmen each year. For the 2020 TSA State Conference, we have 22 participants attending. This year, it is our chapter's 7th year running the club. We hope to come home with some more awards this year. Go Rebs! </p>    
+  <!-- <img src="***"/> ADD IMAGE IF NECESSARY--> 
+  </div>
+</section>
+
+
+<section id="Competition" class="Competition">
+  <div class="CompetitionTitle">
+    <h1>Competitions</h1>
+  </div>
+  <div class="CompetitionInfo">
+    <div class="ActualInfo">
+    <h2>2020 Regional Competition</h2>
+    <p>Sat, Jan 11, 9:00 AM - 1:00 PM;</p>
+    <p>Location: Juanita High School</p>
+	<p>This year's JHS regional competition was held at our own school, Juanita High School! We hosted Eastlake High School and Tesla STEM High School as well. Events included problem solving, engineering design, CO2 cars, 
+	   </p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="JHSactualpic.jpg"/>
+	 </div>
+	</div>
+	<div class="CompetitionInfo2">
+	<div class="ActualInfo2">
+    <h2>2020 State Conference</h2>
+	<p>Wed, Mar 18, 5:00 PM - Sat, Mar 21, 11:00 AM;
+	   </p>
+	 <p>Location: SeaTac Doubletree Hotel</p>
+	 <br>
+	 <p>Registration for the conference opens on January 1, 2020. In order to compete in the TSA state conference, students must qualify from the regional competitions.
+		Every year, Juanita TSA students show off their hard work at the conference by competing in various competitions, including prepared and extemporanous 
+		speech and engineering design. </p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="Doubletree.jpg"/>
+	 </div>
+	 </div>
+	 <div class="CompetitionInfo3">
+	<div class="ActualInfo3">
+    <h2>2020 National TSA Conference</h2>
+	<p>Sat, Jun 27, 12:00 PM - Wed, Jul 1, 11:00 AM;
+	   </p>
+	 <p>Location: Gaylord Opryland Resort and Convention Center - Nashville, TN </p>
+	 <br>
+	 <p>In order to compete in the National TSA Conference, students must qualify by placing in the top three for their event at their state competition. </p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="GaylordNational.jpg"/>
+	 </div>
+	 </div>
+</section>
+
+
+<section id="Activities" class="Activities">
+  <div class="ActivitiesTitle">
+    <h1>Activities</h1>
+  </div>
+   <div class="CompetitionInfo">
+    <div class="ActualInfo">
+    <h2>Yearlong Projects</h2>
+	<p>TSA students have been working on their projects to prepare for the annual State TSA Competition. 
+	   There are a variety of competition events the members have been focusing on, including engineering design, coding, digital video production, extemporaneous speech,
+	   VEX Robotics, and On-Demand Video. 
+	   </p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="YearlongProject.jpg"/>
+	 </div>
+	</div>
+	<div class="CompetitionInfo2">
+	<div class="ActualInfo2">
+    <h2>MOD Fundraiser</h2>
+	<p>TSA Members helped organize the MOD Fundraiser, in which a portion of money spent at MOD Pizza was donated to TSA. The fundraiser raised about $1000! Through this, the club was able to reduce the amount that each member had to pay for the WTSA State Conference by $46.</p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="TSAModFundraiser.jpg"/>
+	 </div>
+	 </div>
+	 <div class="CompetitionInfo3">
+	<div class="ActualInfo3">
+    <h2>Winter Ornaments</h2>
+	<p>The past two winters, the TSA club was asked to help make ornaments to sell and raise money, and the club members glady took up the offer. Members created their 
+       own ornament design on the computer application Rhinocerous 3D before printing it out on the laser printer. We ended up with a lot of creative designs, from christmas trees to
+	   snowflakes!</p>
+	 </div>
+	 <div class="ImageHolder">
+	  <img src="Snowflake.jpg"/>
+	 </div>
+	 </div>
+</section>
+
+<section id="Awards" class="Awards">
+  <div class="AwardsTitle">
+    <h1>Awards</h1>
+  </div>
+   <div class="AwardsInfo">
+    <div class="AwardsActualInfo">
+    <h2>2017-2018 Awards</h2>
+	<p>The 2018 TSA State competition took place March 22 through March 24 of 2018. Students competed in a variety of different events, including robotics, photography, and architectural 
+  design. There were over 1000 competitors at the state competition, and many of our Juanita students came home with awards. We had top 5 placements with Rahul Sista in prepared presentation, Ajay Srivastava for Extemporaneous Speech, and Ajay Srivastava, Nithish Narasimman, Bryce Coble, and Vishwa Neelakandan in tht top 5 for debate. Lauren Dillon and William Dann also placed 2nd for Software Development, and our Tech Bowl team, which consisted of Alex Klimecky, Conor 
+	Fraser, and Vishwa Neelakandan placed 3rd. Vishwa Neelakandan and Arav Singh from Eastlake also successfully placed 2nd in VEX Robotics. 
+	   </p>
+     <h2>2018-2019 Awards</h2>
+     <p>The 2019 TSA State competition took place March 28 through March 30 of 2019, with over 1200 students attening. Events that students competed in included Digital Video Production, Engineering Design, 3D Animation, Extemporanous Speech, and Webmaster. We had 10 finalist placements last year, with 6 of them being in the top three and qualifying for Nationals. Brady Guzik, a junior last year, even managed to secure the top spot in Transportation modeling. Our Webmaster team, who came in 3rd place at state, became the first group from our chapter to attend and compete at the National Conference. They were finalists and placed 6th overall at the National level!
+     </p>
+	 </div>
+	</div>
+<div class="Gallery">
+<h1>Our Gallery</h1>
+</div>
+</section>
+<div class="SlideShowContainer">
+    <div class="MySlides fade">
+	  <div class="NumberText">1/6</div>
+	  <img src="YearlongProject.jpg"/>
+	  <div class="Text">Vishwa and Arav explain the robot they have spent all year working on to the judges, and show off how it works.    
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">2/6</div>
+	  <img src="VideoTSA.jpg"/>
+	  <div class="Text">Members of TSA, including William Dann, Declan Whaley-Sharp, and Kylie and Lauren Dillon work on producing their video for the state competition.  
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">3/6</div>
+	  <img src="TSAHallsActual.jpg"/>
+	  <div class="Text"> Nitish Narasimman, Ajay Srivastava, and Rahul Sista are ready for business as they walk through the halls of TSA.  
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">4/6</div>
+	  <img src="TSAGroupActual.jpg"/>
+	  <div class="Text"> All of the TSA members gather for a quick group photo to commemorate their hard work and for some, the awards they have earned. 	  
+	  </div>
+	</div>
+	 <div class="MySlides fade">
+	  <div class="NumberText">5/6</div>
+	  <img src="TSAWorkingHardActual.jpg"/>
+	  <div class="Text"> Rahul Sista and Nithish Narasimman prepare for their speeches they will present later in the competition. 
+	  </div>
+	</div>
+   <div class="MySlides fade">
+    <div class="NumberText">6/6</div>
+    <img src="JHSWebmasterNats.jpg"/>
+    <div class="Text">Esther Liu, Dhruv Ashok, and Eric Xia smile widely as they exit the stage at the 2019 National Conference. 
+    </div>
+    </div> 	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>    
+  
+</div> 
+ <script>
+showSlides(slideIndex);
+</script>
+</body>
+<footer class="footer">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+<footer class="footer2">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+
+</html>

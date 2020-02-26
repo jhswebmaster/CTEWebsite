@@ -1,0 +1,28 @@
+  @media screen and (max-width: 414px) {
+  .Personalfinancebackground h1 {
+    font-size: 40px !important;
+  }
+  
+  .Personalfinancebackground {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .PersonalFinance, .Career {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+  .PersonalFinance p, .Career p {
+    width: 90%;
+	margin: 0;
+  }
+  
+  .PersonalFinance ul {
+    width: 60%;
+	height: auto;
+	
+  }
+}

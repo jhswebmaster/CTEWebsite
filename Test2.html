@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CTE Program</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+
+
+
+
+
+
+.overallbody {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .leftnav {
+  background-color: purple;
+  width: 25%;
+  height: 100%;
+ }
+ 
+ .videoholder {
+ background-color: rgba(0,0,255,0.5);
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+    z-index: -5;
+    background-size: cover;
+    overflow: hidden;
+ }
+ 
+ .leftnav {
+  width: 25%;
+  height: 20%;
+  display
+ }
+ 
+  .leftnav a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.ChildDevelopment {
+  background-color: #0d0d0d;
+}
+
+.ChildDevelopment:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0px -2px 15px white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.Psychology {
+  background-color: #000033;
+}
+
+.Psychology:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Foods {
+  background-color: #0059b3;
+}
+
+.Foods:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.InteriorDesign {
+  background-color: #999966;
+  text-align: center;
+}
+
+.InteriorDesign:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+
+.TeachingAcademy {
+  background-color: #c68c53;
+  text-align: center;
+}
+
+.TeachingAcademy:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+ 
+ .slideShowContainer {
+   background-repeat: no-repeat;  
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   opacity: 0;
+   position: fixed;
+   z-index: -99;
+   overflow: hidden;
+ }
+ .slideShow {
+  background-repeat: no-repeat;  
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   opacity: 0;
+   position: fixed;
+   z-index: -99;
+   overflow: hidden;
+ }
+ </style>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script>
+   $function(){
+     var slides = $('.slideShow>li');
+	 var slideCount = 0;
+	 var totalSlides = slides.length;
+	 var slideCache = [];
+	 
+	 (function preloader(){
+	   if(slideCount < totalSlides){
+	    //load images
+		slideCache[slideCount] = new Image();
+		slideCache[slideCount].src = slides.eq(slideCount).find('img').attr('src');
+		slideCache[slideCount].onload = function(){
+		  slideCount++
+		  preloader();
+		 }
+		} else {
+		  //Run the slideshow
+		  slideCount = 0;
+		  SlideShow();
+		 }
+		}());
+		
+		function SlideShow(){
+		  //Code goes here
+		  slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000,function(){
+		    slideCount < totalSlides - 1 ? slideCount ++ : slideCount = 0;
+			SlideShow();
+		  });
+		 }
+	});
+
+</script>
+<body>
+<header>
+  <div class="logo-box">
+    <a href="Homepage.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li>  
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+</header>
+<div>
+
+</div>
+<div class="overallbody">
+  <div class="leftnav">
+	  <a class="ChildDevelopment" href="#"><p>Child Development</p></a>
+	  <a class="Psychology" href="#"><p>Psychology</p></a>
+	  <a class="Foods" href="#"><p>Foods</p></a>
+	  <a class="InteriorDesign" href="#"><p>Interior Design</p></a>
+	  <a class="TeachingAcademy" href="#"><p>Teaching Academy</p></a>
+  </div>
+  <div class="slideShowContainer">
+  <ul class="slideShow">
+    <li><img src="JHSfoods.jpg"/></li>
+	<li><img src="JHSkitchen.jpg"/></li>
+	<li><img src="Preparingstudents.jpg"/></li>
+	<li><img src="4.jpg"/></li>
+  </ul>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>

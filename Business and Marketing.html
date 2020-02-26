@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CTE Program</title>
+  <link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="BusinessandMarketingMedia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+li a {
+  color: white;
+  font-family: Squada One;
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+
+
+
+
+
+
+.overallbody {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .leftnav {
+  background-color: purple;
+  width: 25%;
+  height: 100%;
+ }
+ 
+ .videoholder {
+ background-color: rgba(0,0,255,0.5);
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+    z-index: -5;
+    background-size: cover;
+    overflow: hidden;
+ }
+ 
+ .leftnav {
+  width: 25%;
+  height: 25%;
+  display
+ }
+ 
+  .leftnav a {
+  font-family: Patua One;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.Marketing {
+  background-color: #0d0d0d;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Marketing:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0px -2px 15px white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.Microsoftimagine {
+  background-color: #000033;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Microsoftimagine:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Digitaldesign {
+  background-color: #0059b3;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Digitaldesign:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Personalfinance {
+  background-color: #999966;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Personalfinance:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+ 
+ #Businessandmarketing {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+ }
+ 
+ .Hamburger {
+   display: none;
+ }
+ 
+ .overlay {
+   display: none;
+ }
+ 
+ </style>
+
+<body>
+<header>
+  <div class="logo-box">
+    <a href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li>  
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+ <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a class="active"  href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://esthermliu.github.io/JRIIOfficialWebsite">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+  
+</header>
+<div>
+
+</div>
+ <div class="videoholder">
+  <video autoplay muted loop id="Businessandmarketing">
+  <source src="Businessandmarketingvideoactual.mp4" type="video/mp4">
+</video>
+  </div>
+<div class="overallbody">
+  <div class="leftnav">
+	  <a class="Marketing" href="Marketing Courses.html"><p>Marketing</p></a>
+	  <a class="Microsoftimagine" href="MicrosoftImagineAcademy.html"><p>Microsoft Imagine Academy</p></a>
+	  <a class="Digitaldesign" href="DigitalDesign.html"><p>Digital Design</p></a>
+	  <a class="Personalfinance" href="PersonalFinance.html"><p>Personal Finance/<br>Career Work Experience</p></a>
+  </div>
+ 
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@media screen and (max-width: 414px) {
+  .InteriorDesignCourses h1 {
+    text-align: center;
+  }
+  
+  .InteriorDesignCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .InteriorDesignInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .InteriorDesignInfo p {
+    width: 90%;
+  }
+  
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width: 414px) {
+  .ScienceEngineeringCourses h1 {
+    font-size: 50px !important;
+	text-align: center;
+  }
+  
+  .ScienceEngineeringCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .MaterialsScienceTech1, .MaterialsScienceTech2, .MechanicalEngineering1, .MechanicalEngineering2, .ComputerScienceElectricalEngineering {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+
+    .MaterialsScienceTech1 p, .MaterialsScienceTech2 p, .MechanicalEngineering1 p, .MechanicalEngineering2 p, .ComputerScienceElectricalEngineering p {
+	  width: 90%;
+	  margin: 0;
+	}
+  .MaterialsScienceTech1 h2, .MaterialsScienceTech2 h2, .MechanicalEngineering1 h2, .MechanicalEngineering2 h2, .ComputerScienceElectricalEngineering h2 {
+    text-align: center;
+  }
+  
+}

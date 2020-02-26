@@ -1,0 +1,30 @@
+  @media screen and (max-width: 414px) {
+    .PhotographyCourses h1 {
+	  font-size: 50px !important;
+	  text-align: center;
+	}
+	
+	.PhotographyCourses {
+	 background-attachment: scroll !important;
+	 object-fit: cover;
+	}
+	
+	.PhotographyInfo, .AppliedPhotography1, .AppliedPhotography2 {
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
+	.PhotographyInfo h2, .AppliedPhotography1 h2, .AppliedPhotography2 h2 {
+	  text-align: center;
+      font-size: 25px;
+	}
+	
+	.PhotographyInfo p, .AppliedPhotography1 p, .AppliedPhotography2 p {
+	  width: 90%; 
+	  margin: 0;
+	}
+	
+	
+  }

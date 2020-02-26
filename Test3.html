@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CTE Program</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%; 
+}
+
+.navbar li a {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+    -webkit-transition-duration: 0.5s; 
+  transition-duration: 0.5s;
+}
+
+
+.navbar li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+.overallbody {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .leftnav {
+  background-color: purple;
+  width: 25%;
+  height: 100%;
+ }
+ 
+ .leftnav {
+  width: 25%;
+  height: 16.666%;
+  display
+ }
+ 
+  .leftnav a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.Photography {
+  background-color: #0d0d0d;
+}
+
+.Photography:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  box-shadow: 0px -2px 15px white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.Architect {
+  background-color: #000033;
+}
+
+.Architect:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.Biotechnology {
+  background-color: #0059b3;
+}
+
+.Biotechnology:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.ComputerScience {
+  background-color: #999966;
+  text-align: center;
+}
+
+.ComputerScience:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+
+.ScienceEngineering {
+  background-color: #c68c53;
+  text-align: center;
+}
+
+.ScienceEngineering:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+
+.FineArtsCourses {
+  background-color: #99994d;
+  text-align: center;
+}
+
+.FineArtsCourses:hover {
+  -ms-transform: scale(1.07); 
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  z-index: 99;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 0px -2px 15px white;
+}
+.slideShowContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+} 
+ 
+ .slideShowContainer img{
+   background-repeat: no-repeat;  
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+  z-index: -99;
+  overflow: hidden;
+ }
+ </style>
+<script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $(".slideShowContainer img:gt(0)").hide();
+  setInterval(function(){
+    var current = $(".slideShowContainer img:visible");
+	var next = current.next().length ? current.next() : $(".slideShowContainer img:eq(0)");
+	current.fadeOut(1000); 
+	next.fadeIn(1000);
+  },3000);
+  });
+
+</script>
+<body>
+<header>
+  <div class="logo-box">
+    <a href="Homepage.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul class="navbar">      
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="CTE Program.html">CTE Program</a></li>  
+	  <li><a href="Cambridge Program.html">Cambridge Program</a></li> 
+    </ul>
+  </div>
+</header>
+<div>
+
+</div>
+<div class="overallbody">
+  <div class="leftnav">
+	  <a class="Photography" href="Photography.html"><p>Photography</p></a>
+	  <a class="Architect" href="ArchitecturalCourses.html"><p></p>Architectural Courses</a>
+	  <a class="Biotechnology" href="Biotechnology.html"><p>Biotechnology</p></a>
+	  <a class="ComputerScience" href="ComputerScience.html"><p>Computer Science</p></a>
+	  <a class="ScienceEngineering" href="ScienceEngineering.html"><p>Science and Engineering</p></a>
+	  <a class="FineArtsCourses" href="FineArts.html"><p>Fine Arts Courses</p></a>
+  </div>
+  <div class="slideShowContainer">
+	  <img src="MaterialScience.png"/>
+	  <img src="ComputerScience.png"/>
+	  <img src="Laserprinter.png"/>
+	  <img src="ScienceRoom.png"/>
+	  <img src="ScienceRoomTables.png"/>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>

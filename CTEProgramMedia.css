@@ -1,0 +1,11 @@
+@media screen and (max-width: 414px) {
+  .transparentbox h1,   .transparentbox2 h1,   .transparentbox3 h1 {
+    color: white;
+	text-align: center;
+	font-size: 20px;
+  }
+  
+  .transparentbox,   .transparentbox2,   .transparentbox3 {
+    background-color: rgba(72, 74, 76, 0.5) !important;
+  }
+}

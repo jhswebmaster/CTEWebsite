@@ -1,0 +1,30 @@
+@media screen and (max-width: 414px) {
+  .ComputerScienceCourses h1 {
+    font-size: 50px !important;
+	text-align: center;
+  }
+  
+  .ComputerScienceCourses {
+    background-attachment: scroll !important;
+	object-fit: cover;
+  }
+  
+  .IntroCompSci, .ComputerScienceEngineering, .APComputerScience, .APComputerSciencePrinciples {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .IntroCompSci p , .ComputerScienceEngineering p, .APComputerScience p, .APComputerSciencePrinciples p { 
+	width: 90%;
+	margin: 0;
+  }
+  
+   .IntroCompSci h2 , .ComputerScienceEngineering h2, .APComputerScience h2, .APComputerSciencePrinciples h2 { 
+   
+   }
+  
+  
+}

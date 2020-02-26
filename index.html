@@ -1,0 +1,1041 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="JHSlogo.png"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+  @font-face { /* adding the cornerstone font */
+    font-family: "Cornerstone";
+    src: url("Cornerstone.ttf");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: rgb(200,54,54);
+  background-color: rgba(200, 54, 54, 0.5);
+  position: fixed;
+  z-index:3;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+.logo-box {
+  height: 70px;
+  width: 10%;
+}
+
+.logo-box a img{
+  object-fit: contain;
+  height: 70%;
+  width: 35%;
+  position: relative;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-box {
+  height: 70px;
+  width: 50%;
+}
+
+
+
+.landing {
+  background-image: url("SchoolConceptLanding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.6;
+}
+
+.landing h1 {
+  font-size: 70px;
+  font-family: "Cornerstone", display;
+  color: red;
+  padding: 0;
+}
+
+.landing h2 {
+	font-size: 30px;
+	font-family: "Cornerstone", display;
+	color: white;
+	text-shadow:
+		-0.5px -0.5px 0 #000,
+		0.5px -0.5px 0 #000,
+		-0.5px 0.5px 0 #000,
+		0.5px 0.5px 0 #000;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+}
+
+
+.Homepage img {
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.footer {
+   height: 70px;
+   width: 100%;
+   background-color: #595959;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+li a {
+  color: white;
+  font-family: "Squada One";
+  font-size: 25px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+   -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+li a:hover {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+
+h1 {
+  font-family: Verdana,Geneva,sans-serif;
+  padding: 30px 30px 0;
+  text-align: center;
+  font-size: 30px;
+  text-shadow:
+		-0.5px -0.5px 0 #000,
+		0.5px -0.5px 0 #000,
+		-0.5px 0.5px 0 #000,
+		0.5px 0.5px 0 #000;
+}
+
+.teachers {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.teachers h2 {
+  font-family: "Patua One";
+  font-size: 40px;
+  padding: 40px;
+}
+
+div h1 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+#mybtn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  box-shadow: -4px 4px 0 rgba(255,0,0,0.5);
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0);
+   -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#mybtn:hover {
+  box-shadow: -4px 4px 0 rgba(255,0,0,1);
+}
+
+#HideFineArts, #HideCareer {
+  transform: rotate(-90deg);
+  height: 20px;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 5px;
+  border: none;
+  color: red;
+  background-color: rgba(255,255,255,0);
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+ #ShowFineArts, #ShowCareer {
+  transform: rotate(90deg);
+  height: 20px;
+  width: 20px;
+  margin: 15px;
+  border: none;
+  color: red;
+  background-color: rgba(255,255,255,0);
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+ }
+
+ #HideFineArts:hover, #HideCareer:hover, #ShowFineArts:hover, #ShowCareer:hover {
+  color: #007795;
+ }
+
+
+ .FineArtsHeading, .CareerTechHeading {
+  font-family: Patua One;
+  top: 15px;
+  left: 20px;
+  height: 40px;
+  width: 400px;
+  display: inline-block;
+
+ }
+
+ .Teachers {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color:#f0f0f0;
+   padding-bottom: 40px;
+ }
+
+ .FineArtsTeachers, .CareerTechTeachers {
+   width: 400px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+ }
+
+
+ .FineArtsTeachers a, .CareerTechTeachers a {
+   color: black;
+   text-decoration: none;
+ }
+
+
+ .FineArtsTeachers a:hover, .CareerTechTeachers a:hover {
+   color: #007795;
+   text-decoration: none;
+ }
+
+ .FineArtsTeachers p, .CareerTechTeachers p {
+   font-family: Montserrat;
+   margin-bottom: 15px;
+ }
+
+ .FineArtsTeachers a, .CareerTechTeachers a {
+   text-transform: uppercase;
+ }
+
+ .Intro {
+   font-family: "Patua One";
+   font-size: 30px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+   padding-top: 40px;
+   font-weight: normal;
+   background-color: #f0f0f0;
+ }
+
+.Stats {
+  max-width: 100%;
+  width: 100vw;
+  height: 200px;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.StatHolder {
+  margin: 10vw;
+}
+
+.Grades, .Enrollment, .StudentTeacherRatio {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.Grades img {
+  padding-right: 10%;
+}
+
+.Enrollment img {
+  padding-right: 2vw;
+}
+
+.StudentTeacherRatio img {
+  padding-right: 6%;
+}
+
+.Grades img, .Enrollment img, .StudentTeacherRatio img {
+  width: 60px !important;
+  height: 50px !important;
+  position: static !important;
+}
+
+.Grades p, .Enrollment p, .StudentTeacherRatio p{
+  font-family: "Patua One";
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.OverviewInfo {
+  background-color: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 80px;
+}
+
+.Overview, .Rankings, .SchoolData {
+ background-color: white;
+ width: 25%;
+ margin-right: 15px;
+ font-family: Montserrat;
+ text-align: left;
+ box-shadow: 2px 2px 5px grey;
+}
+
+.Overview img, .Rankings img, .SchoolData img {
+  width: 96%;
+  height: 200px;
+  position: static;
+  margin: 0 !important;
+  border: 8px solid white;
+}
+
+.Overview p, .Rankings p, .SchoolData p {
+  font-family: Montserrat;
+  margin: 15px;
+}
+
+.Overview {
+   margin-left: 200px;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 15px;
+  color: #626262
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 1em;
+    padding: 0;
+}
+
+.SchoolData div {
+  margin: 1em 1em;
+}
+
+.QuickFacts {
+  background-color: #f0f0f0;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: "Patua One";
+  text-shadow: none !important;
+  color: #626262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px !important;
+}
+
+
+.TeachersBox {
+  height: 200px;
+  width: 30%;
+  margin-left: 20%;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+
+.StudentsBox {
+  height: 200px;
+  width: 30%;
+  margin-right: 20%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.StudentsBox h3, .TeachersBox h3 {
+  color: #626262;
+  font-family: Montserrat;
+  padding: 15px;
+}
+
+.StudentsBox p, .LearnMoreStudents, .TeachersBox p {
+  font-family: Montserrat;
+  padding: 0 15px;
+}
+
+.LearnMoreStudents {
+  color: #0091ea;
+  padding-top: 15px;
+  width: 100px;
+  padding-left: 14px;
+}
+
+.LearnMoreStudents a {
+  text-decoration: none;
+}
+
+.TeachersAndStudentsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+
+.StudentActivities {
+  height: 130px;
+  background-color: white;
+}
+
+.StudentActivitiesInfo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StudentActivitiesInfo h2 {
+  font-family: "Patua One";
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.SlideShowContainer {
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 900px;
+  height: 700px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+
+.MySlides img{
+  width: 100%;
+  height: 100%;
+ }
+
+.MySlides {
+  display: none;
+ }
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  height: 50px;
+  width: 20px;
+  user-select: none;
+}
+
+.next {
+  top:50%;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  padding: 15px;
+  bottom: 8px;
+  text-align: center;
+  background-color: white;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 18px;
+  box-shadow: 0px -3px 5px grey;
+}
+
+.NumberText {
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.overlay {
+  display: none;
+}
+
+.footer2 {
+  display: none;
+}
+
+.Hamburger {
+  display: none;
+}
+
+.footer a {
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#HideFineArts").click(function(){
+    $(".FineArtsTeachers").hide(1000);
+  });
+  $("#ShowFineArts").click(function(){
+    $(".FineArtsTeachers").show(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#HideCareer").click(function(){
+    $(".CareerTechTeachers").hide(1000);
+  });
+  $("#ShowCareer").click(function(){
+    $(".CareerTechTeachers").show(1000);
+  });
+});
+
+function fadeElemIn(id, ms) {
+  if(ms == null) {
+    ms = 1500;
+  }
+  $(id).fadeIn(ms, "swing");
+}
+</script>
+<script>
+var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("MySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" Active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " Active";
+}
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="JHSMediaCss.css">
+  <link rel="stylesheet" media="screen and (max-width: 414px)" href="IndexMediaCss.css">
+</head>
+
+
+<body>
+
+<header>
+  <div class="logo-box">
+    <a class="HomePage" href="index.html"><img src="JHSlogo.png"></a>
+  </div>
+  <div class="second-box">
+    <ul>
+      <li><a class="active" href="#Home">Home</a></li>
+	  <li><a href="TSA Chapter.html">TSA Chapter</a></li>
+	  <li><a href="Curriculum.html">Curriculum</a></li>
+	  <li><a href="https://neolectra.github.io/index.html">Design Brief</a></li>
+    </ul>
+  </div>
+  <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div id="myNav" class="overlay">
+   <span class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="active" href="index.html">Home</a>
+    <a href="TSA Chapter.html">TSA Chapter</a>
+	<a href="Curriculum.html">Curriculum</a>
+	 <div class="MusicDropDown">
+	    <a href="CTE Program.html">CTE Program</a>
+		  <div class="ProgramDropdown">
+		    <a href="Business and Marketing.html">Business and Marketing</a>
+			<a href="Family and Consumer Sciences.html">Family and Consumer</a>
+			<a href="Technology Education Courses.html">Technology Education</a>
+		  </div>
+		<a href="Cambridge Program.html">Cambridge Program</a>
+	 </div>
+	<a href="https://neolectra.github.io/index.html">Design Brief</a>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<div class="landing">
+<h1>Juanita High School<h1>
+<h2>Kirkland, Washington </h2>
+</div>
+
+<article>
+<div class="Stats">
+  <div class="StatHolder">
+  <div class="Grades">
+  <img src="ActualSchoolIcon.png"/>
+   <p>Grades<br>9-12</p>
+  </div>
+  </div>
+  <div class="StatHolder">
+  <div class="Enrollment">
+	<img src="ActualHuman.png"/>
+     <p>Total Enrollment<br> 1,502</p>
+  </div>
+  </div>
+  <div class="StatHolder">
+  <div class="StudentTeacherRatio">
+    <img src="ActualApple.png"/>
+     <p>Student-Teacher Ratio <br> 20:1</p>
+  </div>
+  </div>
+</div>
+
+<h1 class="QuickFacts">Quick Facts</h1>
+<section class="OverviewInfo">
+
+<div class="Overview">
+  <img src="JHS.jpg"/>
+  <h2>Overview</h2>
+  <p>Juanita High School, located in Kirkland, is ranked 29th within the state of Washington. Students have the opportunity to further challenge themselves either through the Cambridge Program or by taking Advanced Placement&#174; courses and exams. Currently, the AP&#174; participation at JHS is 45%.
+     53% of the student body consists of males, while 47% are female, and the total minority enrollment is 44%.
+     JHS is part of the Lake Washington School District, and is 1 of the 10 high schools in it. <p>
+</div>
+<div class="Rankings">
+  <img src="Rankings.jpg"/>
+  <h2>2019 Rankings</h2>
+  <p>In the National Rankings, Juanita High School ranked #1,672 and earned a silver medal. They scored 35.3 on the College Readiness Index,
+     and 46% of the student body chose to take the AP&#174; test, and 32% of those students successfully passed at least one.
+	 The math and reading proficiency were both a little below district average, with levels at 68% and 58% respectively.<p>
+</div>
+<div class="SchoolData">
+  <img src="JHSSchool.jpg"/>
+  <h2>JHS Data</h2>
+  <div>Total Enrollment: 1,502</div>
+  <hr/>
+  <div>Total Minority Enrollment: 41%</div>
+  <hr/>
+  <div>Total Economically Disadvantaged: 26%</div>
+  <hr/>
+  <div>Graduation rate: 91%</div>
+  <hr/>
+  <div>Grades Served: 9-12</div>
+  <hr/>
+</div>
+ </section>
+<div class="teachers">
+<h2>Students and Teachers</h2>
+</div>
+<section class="TeachersAndStudentsBox">
+  <div class="TeachersBox">
+    <h3>Teachers</h3>
+	<p>Our CTE teachers and staff are trained to give the best experience possible at Juanita High School.
+	   Click here to learn more about them!
+	</p>
+	<div class="LearnMoreStudents"><a href="#Intro">
+	Learn more
+	</a></div>
+  </div>
+  <div class="StudentsBox">
+  <h3>Student Activities</h3>
+	<p>The students at JHS have been dabbling in many CTE related activities from Culinary Competitions to Technology Student Association projects.
+	   It has been a busy year for the Rebels!</p>
+	<div class="LearnMoreStudents"><a href="#StudentActivities">
+	Learn more
+	</a></div>
+  </div>
+ </section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$("a[href='#Intro']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Intro").offset().top
+    }, 1000);
+});
+
+$("a[href='#StudentActivities']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#StudentActivities").offset().top
+    }, 1000);
+});
+ </script>
+
+<div id="Intro" class="Intro">
+ <h2>Meet our Staff</h2>
+</div>
+<section class="Teachers">
+<div class="buttons">
+<button id="HideFineArts"><span>&#10148;</span></button>
+<button id="ShowFineArts"><span>&#10148;</span></button>
+<h2 class="FineArtsHeading">Fine Arts Teachers</h2>
+</div>
+
+<div class="FineArtsTeachers">
+<p><a href="mailto:martz@lwsd.org">Artz, Melanie</a><br>Background: Ms. Artz teaches Pottery, Photography, and Yearbook at JHS.</p>
+<p><a href="mailto:dgreenwell@lwsd.org">Greenwell, Dennis</a><br>Background: Mr. Greenwell teaches 3D Design, Art 1, and Art 2.</p>
+<p><a href="mailto:jhaymaker@lwsd.org">Haymaker, Jessica</a><br>Background: Mrs. Haymaker teaches Art 1, 2, and 3.</p>
+<p><a href="mailto:jwendy@lwsd.org">Jordan, Wendy</a><br>Background: Chef Wendy teaches Foods 1 and Farm to Table.</p>
+<p><a href="mailto:emcmurray-hauk@lwsd.org">McMurray-Hauk, Elizabeth</a><br>Background: Ms. McMurray-Hauk teaches the theater courses, including Sound and Lighting, Costume Design, Screenwriting, and Drama 1.</p>
+
+
+<div class="buttons2">
+<button id="HideCareer"><span>&#10148;</span></button>
+<button id="ShowCareer"><span>&#10148;</span></button>
+<h2 class="CareerTechHeading">Career Tech Ed Teachers</h2>
+</div>
+
+<div class="CareerTechTeachers">
+<p><a href="mailto:gshelton@lwsd.org">Shelton, Greg</a><br>Background: Mr. Shelton went to Western Washington University, and received his National Board Certification.
+														He earned his Masters Degree from Western Governors University. He has taught at JHS for 19 years. He teaches Woodshop
+														Material Science, Architecture, and Mechanical Engineering at Juanita High School. He is also a club advisor for Juanita's TSA chapter. </p>
+<p><a href="mailto:jharris@lwsd.org">Harris, Jennifer</a><br>Background: Ms. Harris teaches Personal Finance and Marketing. She is also the club advisor for Juanita DECA.</p>
+<p><a href="mailto:msteward@lwsd.org">Steward, Miranda</a><br>Background: Ms. Steward teaches Photography, Yearbook, and Digital Design at Juanita High School. </p>
+<p><a href="mailto:dgerdes@lwsd.org">Gerdes, Deborah</a><br>Background: Ms. Gerdes teaches Psychology and Digital Design at Juanita High School. </p>
+<p><a href="mailto:eevans@lwsd.org">Evans, Emily</a><br>Background: Ms.Evans teaches Child Development, Interior Design, and Teaching Academy 1 and 2.</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="StudentActivities" class="StudentActivities">
+<div class="StudentActivitiesInfo">
+<h2>Student Activities</h2>
+</section>
+<div class="SlideShowContainer">
+    <div class="MySlides fade">
+	   <div class="NumberText">1/13</div>
+	   <img style="position: absolute;" src="DECAClub.jpg"/>
+	   <div class="Text">The DECA club is led by Ms. Jennifer Harris on every Wednesday at 12:50 after school and Friday at 7:25 before school.
+						The club focuses on developing students to become better leaders and entrepreneurs for careers in marketing, finance, hospitality,
+						and management. Students can go to the meetings to prepare for the DECA competitions, where those with more experience often mentor the new members of the club.
+						From finance and design to business promotion and entrepreneurship, the DECA
+						competition provides a range of categories for students to express and explore their interests. Every year, JHS sends several of the highest performing students
+						to compete at the state and international level.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">2/13</div>
+	  <img src="JHSDramaClub.png"/>
+	  <div class="Text">The Drama Club is supervised by Ms. Elizabeth McMurray-Hauk after school. Members of the club are involved in all
+						aspects of the drama productions. In the past years, JHS has delivered stunning performances, such as Zombie Prom and Macbeth (2014-2015), A Wrinkle in Time and The Man Who Came to Dinner (2015-2016),
+						the Pirates of Penzance and the Love of Three Oranges (2016-2017), the Addams Family and the Tempest (2017-2018), Arabian Nights and Our Town (2018-2019), and finally the most recent She Kills Monsters. In 2015, Juanita Drama Students participated in Washington State Thespian IE Regionals, and earned
+						State and National Rankings in 7 different events, including monologues, solo song, scienic design, and sound design.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">3/13</div>
+	  <img src="ElectronicsClub.jpg"/>
+	  <div class="Text"> The Electronics Club is led by Ms. Pike on Wednesdays 12:45, once a month. The club focuses on circuit boards, soldering,
+						 and other start-up electronic skills. Small electronic projects will be given, and members have the opportunity to work on them
+						 during the club meetings to expand and build their printed circuit board (PCB) knowledge and skill.
+
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">4/13</div>
+	  <img src="RealFCCLA.png"/>
+	  <div class="Text"> FCCLA is a club that focuses on personal growth and developing leadership skills specifically through Family and Consumer Sciences Education.
+						 Members will develop skills for life through character development, creative and critical thinking, interpersonal communication,
+						 practical knowledge, and career preparation. If you want to SERVE your community, GAIN leadership experience, LEARN leadership skills,
+						 and COMPETE at the local, state, and international levels, come and join the fun!
+
+	  </div>
+	</div>
+	 <div class="MySlides fade">
+	  <div class="NumberText">5/13</div>
+	  <img src="CodingClub.jpg"/>
+	  <div class="Text"> The Coding Club is led by Mr. Apley at 12:50 on Wednesdays. The club focuses on learning and developing members' coding abilities
+						 and skills. Anyone is free to come, and no experience is needed!
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">6/13</div>
+	  <img src="NationalHonorSocietyClub.jpg"/>
+	  <div class="Text">The National Honor Society is headed by Ms. Barber. Members of the club must attend a mandatory meeting once every semester. This is
+						 a nationally sponsored club that promotes school and community service. Members must maintain a 3.5 GPA and give 30 hours of service.
+						 Volunteer opportunities, hour logs, and all forms are posted on the school website for students to check.
+
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">7/13</div>
+	  <img src="HosaClub.png"/>
+	  <div class="Text">HOSA is led by Mr. Clemente and Ms. Pike on Wednesdays, from 12:45 to 1:15. It is a nationally recognized club about health sciences
+						where students can dive into the medical field and explore potential careers within it. Students will research topics and may choose
+						to compete in the competitive events. The competition is designed to motivate HOSA members to improve their knowledge and skills, and
+						several JHS students have won awards for their work in the past.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">8/13</div>
+	  <img src="InteractClub.png"/>
+	  <div class="Text">The Interact Club is led by Ms. Phillips on Thursdays during Homeroom in the JHS cafeteria. The club provides volunteer opportunities for
+						anyone who would like to join, without feeling pressured to rack up a certain number of service hours. Service projects include
+						blood drives held twice a year, collecting food for Hopelink, cleaning up local parks, and designing cards for members of Merrill Gardens, which
+						are senior living homes. They are also connected with the Kirkland Rotary Club.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">9/13</div>
+    <!-- fixme: CHANGE IMAGE -->
+	  <img src="KeyClub.png"/>
+	  <div class="Text"> The Key Club meets on Thursday mornings at 7:20 with Mr. Miller. The club is affiliated with the Kiwanis organization, and they do
+						 activities that help out the school and local community. Every June, the Key Club also manages the annual Transition Room Carnival.
+						 The club is open to anyone who wants to hang out, give back to the community, and have fun!
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">10/13</div>
+	  <img src="LitMag2.jpg"/>
+	  <div class="Text">The Literary Magazine is led by Ms. Steward, and meets during Homeroom. The JHS Literary Magazine, often shortened simply to LitMag
+						 is created and published once every year and represents an outstanding collection of JHS student visual art, poetry, and short stories.
+						 JHS students can choose to submit their work, and the LitMag Staff take care of the rest by compiling the best pieces and editing.
+						 At the end of the year, the LitMag is published and sold for $2.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">11/13</div>
+	  <img src="RebellionNewspaper.png"/>
+	  <div class="Text">The Rebellion is the student newspaper at JHS, and is supervised by Mr. Cheng. JHS students may submit their work, and current events
+						 editorials, and a variety of Rebel information will be published. It is a place for students to express their opinions and thoughts
+						 in a safe place without being judged.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">12/13</div>
+	  <img src="MUN2.jpg"/>
+	  <div class="Text">Model United Nations (M.U.N.) is led by Mr. Miller on Thursdays at 7:20am. The club is committed to providing an environment where
+						members may use information effectively to represent their countries in a civilized debate. Anyone interested in world affairs is free to join.
+						In addition to M.U.N., JHS provides another opportunity to get involved in politics/government issues: the Student Senate headed by Mrs. Hasslinger.
+						This is the student government at JHS, where representatives from each homeroom and Club are sent to discuss student issues and monitor how
+						the ASB funds should be spent.
+	  </div>
+	</div>
+	<div class="MySlides fade">
+	  <div class="NumberText">13/13</div>
+	  <img src="TSAClub.png"/>
+	  <div class="Text">Technology Student Association (TSA) meets every Thursday after school. The club is led by Mr. Shelton and Mr. Apley. Members must attend
+						at least 80% of the meetings to be elgible for competition. Anyone interested in rockets, robotics, software, cars, or engineering is free
+						to join the club. Competitions at the regional and state level are also held later in the year.
+	  </div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+
+
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("mybtn").style.display = "block";
+	  } else {
+		document.getElementById("mybtn").style.display = "none";
+	  }
+	}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+	</script>
+
+
+ </article>
+ <script>
+showSlides(slideIndex);
+</script>
+</body>
+<footer class="footer">
+  <a href="Citations.html" target="_blank"><p>Copyright &copy; 2020 by the Juanita High School Technology Student Association<br>CITATIONS</p></a>
+</footer>
+<footer class="footer2">
+  <p>Copyright &copy; 2020 by the Juanita High School Technology Student Association</p>
+</footer>
+
+</html>

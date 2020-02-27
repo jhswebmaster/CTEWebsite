@@ -6,7 +6,8 @@
   }
   
   .Typewriter2 h1 {
-    font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  font-family: Cornerstone;
 	font-size: 60px;
 	font-weight: normal;
 	text-transform: uppercase;
